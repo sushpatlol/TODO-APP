@@ -1,0 +1,8 @@
+<div class="addItem">
+    <form #f="ngForm" (ngSubmit)="submitToDoItem(f)" novalidate>
+        <textarea placeholder="Description" class="todo-description" rows="8" cols="50" ngModel name="todoDescription"></textarea>
+        <input type="datetime-local" class="todo-time" ngModel name="localTime">
+        <button type="submit" class="button">Add item</button>
+    </form>
+</div>
+

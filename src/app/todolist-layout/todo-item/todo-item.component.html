@@ -1,0 +1,15 @@
+<div class="todoItem">
+    <!---<div *ngIf="showItem; then thenBlock; else elseBlock"></div>-->
+    <div class="header" (click)="toggleShowItem()">
+        TODO ITEM
+    </div>
+    <div *ngIf="showItem">
+        <div class="detail">
+            <div class="description">{{item.description}}</div>
+            <div class="time">{{item.time}}</div>
+        </div>
+        <div class="footer">
+            <button (click)="delete(item)" id="button">DONE</button>
+        </div>
+   </div>
+</div>

@@ -1,0 +1,5 @@
+<div id="layout">
+    <div *ngFor="let item of TodoItems;">
+        <app-todo-item (childEvent)="delete($event)" [item]="item"></app-todo-item>
+    </div>
+</div>

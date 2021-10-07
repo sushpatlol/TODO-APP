@@ -1,0 +1,39 @@
+@mixin transition {
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+@mixin effect{
+    background-color: green;
+    color: whitesmoke
+}
+.addItem{ 
+    .todo-description::placeholder{
+        position: absolute;
+        text-align: left;
+        font-size: 20px;
+        color: rgb(119, 99, 138);
+    }
+    .todo-description{
+        font-size: 20px;
+        border-style:double;
+        border-color: rgb(113, 91, 173);
+    }
+    .todo-time{
+        padding: 8px 8px;
+        @include transition();
+    }
+    .todo-description, .todo-time, .button{
+        float: left;
+        margin: 20px 0px 20px 20px;
+    }
+    .button{
+        padding: 10px 10px;
+        @include transition();
+    }
+    .button:hover, .todo-time:hover{
+        @include effect();
+    }
+}

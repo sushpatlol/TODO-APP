@@ -1,0 +1,43 @@
+@mixin transition {
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+@mixin effect{
+    background-color: green;
+    color: whitesmoke
+}
+@mixin font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+.todoItem{
+    display: block;
+    border: 1px rgb(156, 124, 101) dotted;
+    padding: 10px 10px;
+    margin-left: 15px;
+    line-height: 1.6;
+    .header:hover{
+        cursor: pointer;
+    }
+    .header {
+        @include font();
+        font-size: 25px;
+        color: blueviolet;
+    }
+    .description .time{ 
+        @include font();
+        font-size: 20px;
+    }
+    #button{
+        padding: 10px 10px;
+        font-size: 15px;
+        @include font();
+        @include transition();
+    }
+    #button:hover{
+        @include effect();
+    }
+}
