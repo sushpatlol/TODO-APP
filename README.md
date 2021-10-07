@@ -3,12 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-<video controls="controls" width="800" height="600" name="demo">
-  <source src="screenshots/recording.mov">
-</video>
+
+https://user-images.githubusercontent.com/92080361/136343156-65a4ce7f-5135-441a-a44e-a678343ef00e.mp4
+
+## Screenshot
 <image src="screenshots/todoapp.png">
+  
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
