@@ -27,8 +27,8 @@ export class TodolistLayoutComponent implements OnInit {
 }
 class TodoItem{
   description!: string;
-  time!:string;
-  TodoItem(description: string, time:string){
+  time!:Date;
+  TodoItem(description: string, time:Date){
     this.description = description;
     this.time = time;
   }

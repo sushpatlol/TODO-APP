@@ -12,8 +12,8 @@ export class AppComponent {
 }
 class TodoItem{
   description: string = "";
-  time:string = "";
-  constructor(description: string, time:string){
+  time!:Date;
+  constructor(description: string, time:Date){
     this.description = description;
     this.time = time;
   }

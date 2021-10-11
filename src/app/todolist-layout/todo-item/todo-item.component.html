@@ -6,7 +6,7 @@
     <div *ngIf="showItem">
         <div class="detail">
             <div class="description">{{item.description}}</div>
-            <div class="time">{{item.time}}</div>
+            <div class="time">{{ item.time | date:'medium' }}</div>
         </div>
         <div class="footer">
             <button (click)="delete(item)" id="button">DONE</button>
